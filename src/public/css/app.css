@@ -1,0 +1,436 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+    
+    
+}
+li{
+  list-style-type: none;
+}
+.wow {
+  visibility: hidden;
+}
+.fter{
+  margin-top: -50px;
+
+ 
+}
+
+#intro {
+    background: url("../img/f2.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 700px;
+    top:-50px;
+  
+    
+   
+}
+.navbg{
+  background-color: #24355C;
+
+  
+}
+
+.b{
+  margin-top: 100px;
+}
+.top-nav-collapse {
+    background-color: #24355C;
+  }
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+.logoheader img{
+  height: 120px;
+  width: 140px;
+}
+.header_title{
+  font-size: 2rem;
+  font-weight: 600;
+  
+}
+ .page-footer {
+  background-color: #24355C;
+}
+.page-footer{
+padding: 10px 0;
+}
+.ctact{
+
+  padding-top: 160px;
+  
+}
+.flienhe{
+  margin: 0 auto;
+}
+
+* { box-sizing: border-box; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+@media (max-width: 575px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+/* To change the amount of columns on larger devices, uncomment the code below */
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+} */
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+.consult{
+  margin-top: 150px;
+}
+
+
+.newbody{
+  padding: 20px 40px;
+}
+.tieudenews{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+/* .backgroundnews{
+  background: url("../img/bgnews.jpg")no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
+   
+} */
+.ck{
+  margin-right: 20px;
+}
+/* .container.slbenh.fram {
+  width: 920px;
+} */
+.slbenh{
+  /* margin: 150px; */
+  padding: 35px 100px;
+  text-align: justify;
+
+}
+.imgf{
+  width: 400px;
+  height: 200px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+  .media .avatar-2 {
+      width: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  .media .avatar-2 {
+      width: 160px;
+  }
+}
+
+.card img.rounded-circle {
+  border-radius: 50%;
+}
+.imgfish{
+  padding: 80px 0;
+}
+.img_benh{
+  padding: 80px 10px 80px 30px;
+}
+
+
+.bgroundtable{
+  box-shadow: 8px 8px 5px rgb(216, 214, 214);
+  background-color: white;
+}
+label {
+  font-size: 1rem;
+  
+}
+ .trieu_chung{
+  color: black;
+}
+.backgroundia{
+
+padding: 100px 0px;
+}
+
+
+.labeltrieuchung{
+  font-size: 1rem;
+  text-align: center;
+}
+/* table.dataTable tbody th, table.dataTable tbody td {
+  padding: 8px 117px;
+} */
+.tenbenh{
+  text-align: center;
+}
+.dashboard{
+  margin-top: -36px;
+}
+.sidebar{
+  margin-top: 30px;
+}
+.headertop{
+  margin:-100px 0 0 0px;
+  background-color: white;
+}
+.fram{
+  background-color: white;
+  margin: 20px auto;
+  /* box-shadow: 5px 10px 5px gray; */
+}
+body{
+  background-color:rgb(242 242 242);
+}
+.headertop_search{
+  float:right;
+  margin-top: 30px;
+}
+.headertop_logo{
+  width: 600px;
+}
+
+.article__title{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.ttdc{
+  font-weight: 600;
+  color: chocolate;
+}
+input#trieuchung {
+  margin: 0 20px 0 80px;
+}
+
+.col-example{
+  border: 1px solid;
+  padding: 1rem;
+  margin: 1px;
+}
+.ItemTreePanel{
+  border: 1px solid;
+  margin: 1px;
+}
+/* selectcheckbox */
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+ 
+}
+
+#checkboxes label {
+  
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+input#one {
+  margin: 10px;
+}
+.titlecd{
+  font-weight: 700;
+}
+/* .selectmulti{
+  width: 200px;
+} */
+.multiselected{
+  width: 400px;
+}
+
+
+.nguyennhanclass{
+  padding: 100px;
+}
+div#thongtinBenh{
+  margin-top: -300px;
+  text-align: justify;
+}
+a.tenbenh{
+  text-decoration: none;
+  font-size: 1rem;
+}
+.dangdonggoi{
+  width:120px
+}
+.paddingthuoc{
+  padding: 5px;
+}
+.titlethuoc{
+  text-align: center;
+}
+.headertitlethuoc{
+  color: gray;
+}
+/* .menunav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+.header-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #24355C;
+  color: white;
+}
+.tieude{
+  
+ text-align: right;
+ color: whitesmoke;
+ font-weight: 600;
+}
+.header-bottom{
+  
+    background: url("../img/bgthongtin.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    margin-top: -100px;
+    padding: 13px 0;
+  
+}
+.titlemain{
+  text-align: center;
+  padding: 40px;
+
+}
+.titlemain__1{
+  color: grey;
+  font-size: 1.5rem;
+}
+.titlemain__2{
+  color: rgb(102, 98, 98);
+}
+
+h3.thongtinthuoc__title  {
+  color: #9a400b;
+}
+h3.thongtinbenh__title {
+  color: #9a400b;
+}
+/* css thong tin benh ajax */
+.thongtinBenh__tieude {
+  font-size: 1.5rem;
+  color: grey;
+}
+.thongtinBenh__ten {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+img.imgclass {
+  float: right;
+}
+.thongtinBenh__tacnhan,
+.thongtinBenh__trieuchung,
+.thongtinBenh__chuandoan,
+.thongtinBenh__phanbo,
+.thongtinBenh__phongchong,
+.thongtinBenh__dieutri,
+.thongtinBenh__thuoc {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* end ajax css */
+
+
+h3.thongtinthuoc__title {
+    font-size: 1.2rem;
+}
+.Label.trangthai {
+  
+  margin: 8px 0 0 36px;
+}
+img.img-fluid.imgf {
+  float: right;
+  padding: 10px;
+}
+table.TitlePanel {
+  background-color: #eceef1;
+}

@@ -1,0 +1,98 @@
+
+<div class="header-bottom">
+    <div class="container">
+    <div class="header-top__logo">
+    <img src="./img/logoheader.png" style="width: 200px;" height="120px" alt="">
+    </div>
+</div>
+</div>
+<header class="menunav">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar navbg">
+
+            <div class="container">
+
+                <!-- Navbar brand -->
+             
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll menuflex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../home">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news">CHUẨN ĐOÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fdimg">HÌNH ẢNH</a>
+                        </li>
+                        <li class="nav-item">
+                            {{!-- <a class="nav-link" href="../contact">LIÊN HỆ</a> --}}
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../tracuuthuoc">TRA CỨU THUỐC</a>
+                        </li>
+                    </ul>
+                    <!-- Links -->
+                     <ul>
+                        <li>
+                            <span class="tieude">Hệ thống chuẩn đoán bệnh cá</span>
+                        </li>
+                    </ul>
+                    <!-- Social Icon  -->
+                    
+                </div>
+                <!-- Collapsible content -->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+
+      
+
+</header>
+
+    <!--Main Navigation-->
+{{!-- <div class="container "> --}}
+<div class=" fram container">
+     <div class="container titlemain">
+     <span class="titlemain__1">CHUẨN ĐOÁN</span>
+      <h2 class='titlemain__2'>DỰA TRÊN HÌNH ẢNH</h2>
+ </div>
+    <div class="row">
+
+   {{#each ifimg}}
+    <div class="col-12 col-lg-3">
+      <a href="./infimg/{{hinhanh.value}} ">
+         <img  onclick="changeIt(this.src)" src="https://res.cloudinary.com/dh-can-tho/image/upload/v1607843860/fish/{{hinhanh.value}}.png" alt="Not img!!" class="img-fluid imgf preview">
+      </a> 
+      
+      <h6 class="tenbenh">{{ten_benh.value}}</h6>
+    </div>
+     {{/each}} 
+  </div>   
+ </div>
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+      <!-- Footer Elements -->
+
+  <div class="container lienhe" style="text-align: center;">
+    <p> Email: huongvq11@gmail.com</p>
+    
+    <p> Số điện thoại: 0389147071</p>
+  </div>
+
+</footer>
+<!-- Footer -->

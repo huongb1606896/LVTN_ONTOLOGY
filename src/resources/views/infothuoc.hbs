@@ -1,0 +1,186 @@
+
+<div class="header-bottom">
+    <div class="container">
+    <div class="header-top__logo">
+    <img src="../img/logoheader.png" style="width: 200px;" height="120px" alt="">
+    </div>
+</div>
+</div>
+
+<header class="">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar navbg">
+
+            <div class="container">
+
+                <!-- Navbar brand -->
+             
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll menuflex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../home">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news">CHUẨN ĐOÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fdimg">HÌNH ẢNH</a>
+                        </li>
+                        <li class="nav-item">
+                            {{!-- <a class="nav-link" href="../contact">LIÊN HỆ</a> --}}
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../tracuuthuoc">TRA CỨU THUỐC</a>
+                        </li>
+                    </ul>
+                    <!-- Links -->
+                     <ul>
+                        <li>
+                            <span class="tieude">Hệ thống chuẩn đoán bệnh cá</span>
+                        </li>
+                    </ul>
+                    <!-- Social Icon  -->
+                    
+                </div>
+                <!-- Collapsible content -->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+
+      
+
+</header>
+    <!--Main Navigation-->
+
+
+
+<div class="container slbenh fram">
+  <div class="container titlemain">
+     <span class="titlemain__1">THÔNG TIN THUỐC</span>
+     {{#each thongtin_thuoc}}
+      <h2 class='titlemain__2'>  {{lbthuoc.value }}     </h2>
+      {{/each}}
+ </div>
+    <div class="row">
+   
+    {{!-- start coong dung --}}
+    <div class="col-6 thongtinthuoc">
+      <div class="thongtinthuoc__congdung">
+        <h3 class="thongtinthuoc__title">
+        Công dụng
+      </h3>
+      <div class="thongtinthuoc__content">
+        {{#each thongtin_thuoc}}
+         {{cdthuoc.value }}   
+      {{/each}}
+      
+      </div>
+      </div>
+      {{!-- start dạng đóng gói --}}
+      <div class="thongtinthuoc__dongoi">
+        <h3 class="thongtinthuoc__title">
+          Dạng đóng gói
+        </h3>
+        <div class="thongtinthuoc__content">
+          {{#each thongtin_thuoc}}
+          {{dgthuoc.value }}   
+        {{/each}}
+        
+        </div>
+      </div>
+      {{!-- end dạng đóng gói --}}
+      {{!-- start quy cách đóng gói --}}
+    <div class=" thongtinthuoc">
+      <h3 class="thongtinthuoc__title">
+       Quy cách đóng gói
+      </h3>
+      <div class="thongtinthuoc__content">
+       {{#each thongtin_thuoc}}
+         {{qcthuoc.value }}   
+        {{/each}}
+      
+      </div>
+    </div>
+    {{!-- end quy cách đóng gói --}}
+    {{!-- start hoạt chất chính --}}
+    <div class=" thongtinthuoc">
+      <h3 class="thongtinthuoc__title">
+        Hoạt chất chính
+      </h3>
+      <div class="thongtinthuoc__content">
+         {{#each thongtin_thuoc}}
+         {{hcthuoc.value }}   
+         {{/each}}
+      
+      </div>
+    </div>
+    {{!-- end hoạt chất chính --}}
+    {{!-- start số đăng ký --}}
+    <div class=" thongtinthuoc">
+      <h3 class="thongtinthuoc__title">
+        Số đăng ký
+      </h3>
+      <div class="thongtinthuoc__content">
+        {{#each thongtin_thuoc}}
+         {{sdkthuoc.value }}   
+      {{/each}}
+      
+      </div>
+    </div>
+    {{!-- end số đăng ký --}}
+
+      
+    </div>
+    {{!-- end cong dụng --}}
+     {{!-- start hinh anh --}}
+    <div class="col-6 thongtinthuoc">
+      <h3 class="thongtinthuoc__title">
+        {{!-- Hình minh hoạ thuốc --}}
+      </h3>
+      <div class="thongtinthuoc__content ">
+        {{#each thongtin_thuoc}}
+          <img src="https://res.cloudinary.com/dh-can-tho/image/upload/v1608195357/thuoc/{{hinhthuoc.value }}.jpg" style="width:350px;height:300px; margin:20px; float:right"alt="">
+         
+         {{/each}}
+      
+      </div>
+    </div>
+    {{!-- end hinh anh--}}
+    
+    
+ 
+    
+    
+    </div>
+    {{!-- end row --}}
+</div>
+{{!-- end container --}}
+
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+      <!-- Footer Elements -->
+
+  
+  
+
+
+  <div class="container lienhe" style="text-align: center;">
+    <p> Email: huongvq11@gmail.com</p>
+    
+    <p> Số điện thoại: 0389147071</p>
+  </div>
+
+</footer>
+<!-- Footer -->

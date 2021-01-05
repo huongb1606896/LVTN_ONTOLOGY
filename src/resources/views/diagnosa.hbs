@@ -1,0 +1,159 @@
+
+<div class="header-bottom">
+    <div class="container">
+    <div class="header-top__logo">
+    <img src="./img/logoheader.png" style="width: 200px;" height="120px" alt="">
+    </div>
+</div>
+
+<header class="">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar navbg">
+
+            <div class="container">
+
+                <!-- Navbar brand -->
+             
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll menuflex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../home">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news">CHUẨN ĐOÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fdimg">HÌNH ẢNH</a>
+                        </li>
+                        <li class="nav-item">
+                            {{!-- <a class="nav-link" href="../contact">LIÊN HỆ</a> --}}
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../tracuuthuoc">TRA CỨU THUỐC</a>
+                        </li>
+                    </ul>
+                    <!-- Links -->
+                     <ul>
+                        <li>
+                            <span class="tieude">Hệ thống chuẩn đoán bệnh cá</span>
+                        </li>
+                    </ul>
+                    <!-- Social Icon  -->
+                   
+                </div>
+                <!-- Collapsible content -->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+
+      
+
+</header>
+    <!--Main Navigation-->
+{{!-- <div class="backgroundia "> --}}
+<div class="container newbody fram">
+  <h1 class='mb-3 tieudenews'>Kết quả chuẩn đoán</h1>
+<form action="/infott" method="POST" id="tt">
+<table id="dt-bordered" class="table table-bordered" cellspacing="0" width="100%">
+  <thead>
+    <tr> 
+      <th>Độ tin cậy</th>
+      <th class="th-sm">Tên bệnh
+      </th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    {{#each results}}
+    <tr>
+      <td>{{value}}%</td>
+      <td ><input type="submit" id="ten_benh" name="ten_benh" class="ttbenh" value="{{ten_trieuchung}}"> 
+         {{!-- <label for="trieuchung"> {{ten_trieuchung}}</label><br> --}}
+       </td>
+     
+    </tr>
+     {{/each}}
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Độ tin cậy</th>
+      <th>Tên bệnh
+      </th>
+      
+    </tr>
+  </tfoot>
+</table>
+</form>
+<hr>
+
+  <h2 class='mb-3 ttdc'>Triệu chứng đã chọn</h2>
+   
+    <td> {{trieuchung_dachon}}</td>
+      
+     
+
+ 
+<hr>
+<div class="container  ">
+<h2 class='mb-3 tieudenews'>Triệu chứng liên quan</h2>
+<form action="/diagnosa" method="POST" id="tt">
+<table id="dt-bordered" class="table table-bordered bgroundtable" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      
+      <th class="th-sm labeltrieuchung">Triệu chứng
+      </th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    {{#each trieuchunglienquan}}
+    <tr>
+  
+      <td ><input type="checkbox" id="trieuchung" name="trieuchung" class="ck" value="{{xtrieuchung.value}}"> 
+         <label class="trieu_chung" for="trieuchung"> {{xtrieuchung.value}}</label><br>
+       </td>
+     
+    </tr>
+     {{/each}}
+  </tbody>
+  <tfoot>
+    <tr>
+    
+      <th class="labeltrieuchung">Triệu chứng
+      </th>
+      
+    </tr>
+  </tfoot>
+</table>
+<button type="submit" id="btnSubmit" class="btn btn-default">Chuẩn đoán</button>
+</form> 
+</div>
+</div>
+{{!-- </div> --}}
+
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+      <!-- Footer Elements -->
+
+
+  <div class="container lienhe" style="text-align: center;">
+    <p> Email: huongvq11@gmail.com</p>
+    
+    <p> Số điện thoại: 0389147071</p>
+  </div>
+
+</footer>
+<!-- Footer -->

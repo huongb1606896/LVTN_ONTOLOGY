@@ -1,0 +1,133 @@
+
+<div class="header-bottom">
+    <div class="container">
+    <div class="header-top__logo">
+    <img src="./img/logoheader.png" style="width: 200px;" height="120px" alt="">
+    </div>
+</div>
+</div>
+
+<header class="">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar navbg">
+
+            <div class="container">
+
+                <!-- Navbar brand -->
+             
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll menuflex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../home">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../news">CHUẨN ĐOÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../fdimg">HÌNH ẢNH</a>
+                        </li>
+                        <li class="nav-item">
+                            {{!-- <a class="nav-link" href="../contact">LIÊN HỆ</a> --}}
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../tracuuthuoc">TRA CỨU THUỐC</a>
+                        </li>
+                    </ul>
+                    <!-- Links -->
+                     <ul>
+                        <li>
+                            <span class="tieude">Hệ thống chuẩn đoán bệnh cá</span>
+                        </li>
+                    </ul>
+                    <!-- Social Icon  -->
+                   
+                </div>
+                <!-- Collapsible content -->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+
+      
+
+</header>
+    <!--Main Navigation-->
+
+<div class="container fram paddingthuoc">
+    <div class="container paddingthuoc">
+   <h5 class="headertitlethuoc">DANH MỤC THUỐC THUỶ SẢN</h5>
+   <H2 class="titlethuoc">ĐƯỢC PHÉP LƯU HÀNH TẠI VIỆT NAM</H2>
+</div>
+    <div class="row">
+        <table id="dt-filter-select" class="table" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                <th class="th-sm">Tên thuốc
+                </th>
+                <th class="th-sm">Hoạt chất chính
+                </th>
+                <th class="th-sm">Công dụng
+                </th>
+                <th class="th-sm dangdonggoi">Dạng đóng gói
+                </th>
+                <th class="th-sm">Số đăng ký
+                </th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each thongtin_thuoc}}
+                <tr>   
+                <td>{{lbthuoc.value}}</td>
+                <td>{{hcthuoc.value}}</td>
+                <td>{{cdthuoc.value}}</td>
+                <td>{{dgthuoc.value}}</td>
+                <td>{{sdkthuoc.value}}</td>
+                </tr>
+                {{/each}}
+ 
+            </tbody>
+            <tfoot>
+                <tr>
+                <th>Tên thuốc
+                </th>
+                <th>Hoạt chất chính
+                </th>
+                <th>Công dụng
+                </th>
+                <th>Dạng đóng gói
+                </th>
+                <th>Số đăng ký
+                </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+      <!-- Footer Elements -->
+
+
+  
+
+
+  <div class="container lienhe" style="text-align: center;">
+    <p> Email: huongvq11@gmail.com</p>
+    
+    <p> Số điện thoại: 0389147071</p>
+  </div>
+
+</footer>
+<!-- Footer -->

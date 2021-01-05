@@ -1,0 +1,432 @@
+
+<div class="header-bottom">
+<div class="container">
+<div class="header-top__logo">
+<img src="./img/logoheader.png" style="width: 200px;" height="120px" alt="">
+</div>
+</div>
+</div>
+
+
+
+
+<header class="menunav">
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar navbg">
+
+<div class="container">
+
+<!-- Navbar brand -->
+
+
+<!-- Collapse button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Collapsible content -->
+<div class="collapse navbar-collapse" id="basicExampleNav">
+
+<!-- Links -->
+<ul class="navbar-nav mr-auto smooth-scroll menuflex">
+<li class="nav-item">
+<a class="nav-link" href="../home">TRANG CHỦ</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../news">CHUẨN ĐOÁN</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../fdimg">HÌNH ẢNH</a>
+</li>
+<li class="nav-item">
+{{!-- <a class="nav-link" href="../contact">LIÊN HỆ</a> --}}
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../tracuuthuoc">TRA CỨU THUỐC</a>
+</li>
+</ul>
+<!-- Links -->
+<ul>
+<li>
+<span class="tieude">Hệ thống chuẩn đoán bệnh cá</span>
+</li>
+</ul>
+<!-- Social Icon  -->
+
+</div>
+<!-- Collapsible content -->
+
+</div>
+
+</nav>
+<!--/.Navbar-->
+
+
+
+</header>
+
+
+
+{{!-- start container --}}
+<div class="container newbody fram ">
+<div class="container titlemain">
+<span class="titlemain__1">CHUẨN ĐOÁN</span>
+<h2 class='titlemain__2'>DỰA TRÊN TRIỆU CHỨNG</h2>
+</div>
+{{!-- start row --}}
+<div class="row" >
+{{!-- start table --}}
+<div class="column col-12 m-0 p-0">
+<table style="height: 365px; width:100% " class="">
+{{!-- start body --}}
+<tbody>
+{{!-- begin tr1 --}}
+<tr>
+    {{!-- begin td in tr1 --}}
+<td align="left"height="40px" colspan="3" style="vertical-align: top;  height: 40px;">
+{{!-- table in td1 --}}
+<table cellspacing="0" class=" w-100 d-flex justify-content-center mb-4" cellpadding="0" style=" height: 40px;">
+{{!-- tbody table td1 --}}
+<tbody>
+
+<tr>
+<td align="left" style="vertical-align: top;">
+<table cellspacing="0" cellpadding="0" class="mb-2 mt-2">
+<tr >
+{{!-- vi tri ngoai --}}
+<td align="left" style="vertical-align: top;" >
+        <div class="Label  ml-2 mr-3">
+            <span class="titlecd"> Chọn vị trí ngoài</span>
+        
+        <select id="dauhieubenngoai" multiple="multiple" class="selectmulti">
+            
+                {{#each vitri_ngoai}}
+                <option value="{{vitri_ngoai.value}}">{{vitri_ngoai.value}}</option>
+                {{/each}}
+        </select>
+         </div>
+</td>
+{{!-- end vi tri ngoai --}}
+{{!-- vitri trong --}}
+<td align="left" style="vertical-align: top;">
+        <div class="Label">
+        <span class="titlecd"> Chọn vị trí bên trong </span>
+        <select id="dauhieubentrong" multiple="multiple" class="selectmulti">
+            
+                {{#each vitri_trong}}
+                <option value="{{vitri_trong.value}}">{{vitri_trong.value}}</option>
+                {{/each}}
+        </select>
+    </div>
+</td>
+{{!-- end vitri trong --}}
+{{!-- Biểu hiện  --}}
+<td align="left" style="vertical-align: top;">
+        <div class="Label trangthai" >
+             <span class="titlecd"> Biểu hiện </span>
+            <input type="checkbox" onclick="showCheckboxes()" id="bieuhien" name="bieuhien" value="Biểu hiện">
+         
+      
+        </div>
+    </div>
+</td>
+{{!-- end biểu hiện --}}
+
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+{{!-- end body tble td1 --}}
+
+</table>
+{{!-- end table td1 --}}
+</td>
+    {{!-- end td in tr1 --}}
+
+</tr>
+{{!-- end tr1 --}}
+{{!-- begin tr2 --}}
+<tr class="row">
+<td class="col-12 mr-0 pr-0 col-md-6" align="left" rowspan="1" style="vertical-align: top; height: 325px;">
+<table class="w-100 m-0 p-0" cellspacing="0" cellpadding="0" style=" height: 325px;">
+<tbody>
+<tr>
+<td align="left" height="362px" style="vertical-align: top;">
+<table cellspacing="0" cellpadding="0" class=" w-100" style=" height: 364px;">
+<tbody class="border border-dark">
+{{!-- tieu de chuan doan --}}
+<tr>
+    <td align="left" width="" height="" colspan="1" style="vertical-align: top;">
+        <table cellspacing="0" cellpadding="0" class="TitlePanel" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td align="left" width="25px" height="" rowspan="1" style="vertical-align: top;"><img src="https://keyserver.lucidcentral.org/key-server/player/images/FeaturesAvailable_20.png" class="gwt-Image">
+                    </td>
+                    <td align="left" width="" height="" style="vertical-align: middle;">
+                        <div class="gwt-HTML">Chuẩn đoán</div>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+{{!-- end tieu đe chuan doan --}}
+{{!-- dau hieu --}}
+<tr>
+    <td align="left" width="" height="" style="vertical-align: top; height: 100%;">
+        <table cellspacing="0" cellpadding="0" class="TreePanel" style="width: 100%; height: 100%;">
+            <tbody>
+                <tr>
+                    <td align="left" width="" height="" style="vertical-align: top;">
+                        <div style="overflow: auto; position: relative; zoom: 1; height: 332px;">
+                            <div style="position: relative; zoom: 1;">
+                                <div class="gwt-Tree" style="position: relative; zoom: 1;">
+                                    <div tabindex="0" hidefocus="true" role="tree" style="font-size: 0px; position: absolute; outline: 0px; z-index: -1;">
+                                        <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                                    </div>
+                                    <div style="padding: 0px; margin-left: 0px;">
+                                        <table style="white-space: nowrap;">
+                                            <tbody>
+                                                <tr>
+                                                
+                                                    <td style="vertical-align: middle;">
+                                                        <div class="gwt-TreeItem" role="treeitem" style="display: inline;" id="gwt-uid-5">
+                                                            <table cellspacing="0" cellpadding="0" class="TreeItem">
+                                                                <tbody>
+                                                                    <tr>                                                
+                                                                        <td align="left" style="vertical-align: middle;">
+                                                                            <table cellspacing="0" cellpadding="0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="left" style="vertical-align: middle;">
+                                                                                            <div class="Label">
+                                                                                                    <span class="titlecd ml-1">Triệu chứng bên trong</span>
+                                                                                                    <br>
+                                                                                               
+                                                                                                <div id="addTrieuchungtrong"></div>
+                                                                                                
+                                                                                            </div>
+
+                                                                                            
+                                                                                        </td>
+                                                                                        
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="vertical-align: middle;">
+                                                                                            <div class="Label">
+                                                                                                    <span class="titlecd ml-1">Triệu chứng bên ngoài</span>
+                                                                                                    <br>
+                                               
+                                                                                                <div id="addTrieuchungngoai"></div>
+                                                                                                
+                                                                                                
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        
+                                                                                    </tr>
+                                                                                     <tr>
+                                                                                        <td align="left" style="vertical-align: middle;">
+                                                                                            <div class="Label">
+                                                                                                    <span class="titlecd ml-1">Biểu hiện</span>
+                                                                                                    <br>
+                                               
+                                                                                                <div id="addBieuhien"></div>
+                                                                                                
+                                                                                                
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td align="left" style="vertical-align: middle;">
+                                                                                            
+                                                                                            <div>
+                                                                                                <form>
+                                                                                                    <div class="multiselected">
+                                                                                                        
+                                                                                                        <div id="checkboxes">
+                                                                                                        {{#each trang_thai}}
+                                                                                                        <label for="{{trangthai}}">
+                                                                                                            <img  style = "width:80px; height:50px; padding:2px" src="https://res.cloudinary.com/dh-can-tho/image/upload/v1609169770/trieuchung/{{hinhtrieuchung.value}}.jpg"  >
+
+                                                                                                            <input type="checkbox" class="ads_Checkbox ml-3 mr-2" id="{{trangthai}}" value="{{trangthai.value}}"/>{{trangthai.value}}
+
+                                                                                                        </label>
+
+                                                                                                        {{/each}}
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>                        
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>                                               
+                                                    </td>
+                                                                                        
+                                               </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                </div>        
+                            </div>            
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+                                                       
+    </td>
+</tr>
+{{!-- end dau hieu --}}
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="col-12 ml-0 pl-0 col-md-6" align="left" width="" height="" rowspan="1" style="vertical-align: top; height: 725px;">
+<table class="w-100 m-0 p-0" cellspacing="0" cellpadding="0" >
+<tbody class="border border-dark">
+<tr>
+<td align="left" height="362px" style="vertical-align: top;">
+<table cellspacing="0" class="w-100" cellpadding="0"  style=" height: 362px;">
+<tbody>
+<tr>
+    <td align="left" width="" height="" colspan="1" style="vertical-align: top;">
+        <table cellspacing="0" cellpadding="0" class="TitlePanel" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td align="left" width="25px" height="" rowspan="1" style="vertical-align: top;"><img src="https://keyserver.lucidcentral.org/key-server/player/images/EntitiesRemaining_20.png" class="gwt-Image">
+                    </td>
+                    <td align="left" width="" height="" style="vertical-align: middle;">
+                        <div class="gwt-HTML">Bệnh</div>
+                    </td>
+                    <td align="left" width="" height="" rowspan="1" style="vertical-align: top; width: 16px;"><img src="https://keyserver.lucidcentral.org/key-server/player/images/Wait_16.gif" class="gwt-Image" aria-hidden="true" style="display: none;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td align="left" width="" height="" style="vertical-align: top; height: 100%;">
+        <table cellspacing="0" cellpadding="0" class="TreePanel" style="width: 100%; height: 100%;">
+            <tbody>
+                <tr>
+                    <td align="left" width="" height="" style="vertical-align: top;">
+                        <div style="overflow: auto; position: relative; zoom: 1; height: 332px">
+                            <div style="position: relative; zoom: 1;">
+                                <div class="gwt-Tree" style="position: relative; zoom: 1;">
+                                    <div tabindex="0" hidefocus="true" role="tree" style="font-size: 0px; position: absolute; outline: 0px; z-index: -1;">
+                                        <input type="text" tabindex="-1" role="presentation" style="opacity: 0; height: 1px; width: 1px; z-index: -1; overflow: hidden; position: absolute;">
+                                    </div>
+                                    <div style="padding: 0px; margin-left: 0px;">
+                                        <table style="white-space: nowrap;" class="w-100">
+                                            <tbody>
+                                                <tr>
+                                                    
+                                                    <td style="vertical-align: middle;">
+                                                        <div class="gwt-TreeItem" role="treeitem" style="display: inline;" id="gwt-uid-7">
+                                                            <table cellspacing="0" cellpadding="0" class="TreeItem w-100">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        
+                                                                        <td align="left" style="vertical-align: middle;">
+                                                                            <table cellspacing="0" cellpadding="0" class="w-100">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="left" style="vertical-align: middle;">
+                                                                                            <div class="Label">
+                                                                                                <div id="addBenh">
+
+                                                                                                </div>
+                                
+                                                                                                
+                                                                                            </div>
+                                                                                        </td>
+                                                                                        
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+</tbody>
+</table>
+</td>
+</tr>
+{{!-- end tr2 --}}
+</tbody>
+{{!-- end body --}}
+</table>
+{{!-- end table --}}
+</div>
+
+
+{{!-- div add thong tin benh --}}
+
+{{!-- end add thong tin benh --}}
+<div id="thongtinBenh" >
+    
+    
+</div>
+
+</div>
+{{!-- end row --}}
+</div>
+{{!-- end container --}}
+
+
+
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <div class="container lienhe" style="text-align: center;">
+    <p> Email: huongvq11@gmail.com</p>
+    
+    <p> Số điện thoại: 0389147071</p>
+  </div>
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
